@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "@vuepic/vue-datepicker": "^3.6.5",
+    "maska": "^2.1.5",
+    "vue": "^3.2.45",
+    "vue-draggable-next": "^2.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
