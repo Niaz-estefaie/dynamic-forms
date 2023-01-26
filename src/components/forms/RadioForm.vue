@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="input-box">
+  <div class="radio">
     <h4>{{ options.label }}</h4>
     <label
       class="title-label"

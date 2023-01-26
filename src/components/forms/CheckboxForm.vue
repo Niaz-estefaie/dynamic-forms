@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="input-box">
+  <div class="check">
     <label class="input-checkbox">
       <input
         class="input"
