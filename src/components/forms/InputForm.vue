@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="input-box">
+  <div class="name">
     <label class="title-label">
       {{ options.label }}
       <span v-if="options.required" class="required"> * </span>
@@ -15,6 +15,7 @@ defineProps({
       class="input-text"
       :type="options?.type?.toLowerCase() === 'string' ? 'text' : 'number'"
       v-model="options.value"
+      :placeholder="options.title"
       :disabled="options?.accessLevel?.toLowerCase() === 'admin'"
       v-maska:[options.maskOption]
     />

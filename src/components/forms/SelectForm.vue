@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="input-box">
+  <div class="dropdown">
     <label class="title-label">
       {{ options.label }}
       <span v-if="options.required" class="required"> * </span>

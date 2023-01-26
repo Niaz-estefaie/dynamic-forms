@@ -1,7 +1,7 @@
 <script setup>
-import Sample from './components/Sample.vue';
+import Sample from "./components/Sample.vue";
 </script>
 
 <template>
-    <Sample />
+  <Sample />
 </template>

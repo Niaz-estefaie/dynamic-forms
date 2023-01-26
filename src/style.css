@@ -4,7 +4,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #212121;
+  color: white;
+  background: #2F2F4A;
   min-height: 100vh;
 
   font-synthesis: none;
@@ -12,11 +13,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --accent-color: rgb(102, 57, 139);
 }
-input:disabled, textarea:disabled, select:disabled {
-  background: #ddd;
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background: #21213C;
 }
 .flex-box {
   display: flex;
@@ -26,70 +27,129 @@ label {
   display: flex;
   align-items: center;
 }
-.input-box {
-  position: relative;
-  margin: 10px 0;
-  padding-bottom: 10px;
-}
-.input-text {
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  outline: none;
-  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 6px 12px;
-  color: #212121;
-  box-sizing: border-box;
-}
-select {
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  outline: none;
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 6px 12px;
-  box-sizing: border-box;
-}
-select option {
-  color: #212121;
-}
-.input-checkbox {
-  padding: 5px 10px;
-}
-input {
-  margin-right: 10px;
-  accent-color: var(--accent-color);
-  min-height: 1rem;
-  min-width: 1rem;
-}
-input::placeholder,
-textarea::placeholder {
-  opacity: 0.5;
-  color: rgba(0, 0, 0, 0.85);
-}
 button {
-  padding: 8px 15px;
-  background: white;
-  border: 1px solid #ddd;
+  padding: 10px 20px;
+  color: white;
   border-radius: 8px;
   cursor: pointer;
-}
-.base-button:hover {
-  background: #fafafa;
+  font-weight: bold;
 }
 .success-button {
-  margin: 0 10px;
-  background: #212121;
-  color: white;
+  background: #0071FF;
+  border: 1px solid #0071FF;
+}
+.delete-button {
+  background: #C8102E;
+  border: 1px solid #C8102E;
 }
 .form-repeater .input-box {
   padding-bottom: 0;
 }
 .required {
   color: rgb(206, 5, 5);
+}
+form {
+  margin: 2% auto;
+  padding: 1em;
+}
+.name {
+  width: 100%;
+}
+.name input,
+select,
+textarea {
+  width: 100%;
+  height: 3em;
+  text-indent: 0.5em;
+  background: #404058;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  outline-color: white;
+  font-size: 16px;
+}
+.name input[name="surname"] {
+  float: right;
+}
+.name input[type="mail"] {
+  margin-top: 1em;
+  width: 100%;
+}
+.radio,
+.dropdown,
+.message,
+.check,
+.submit {
+  margin-top: 1em;
+}
+.dropdown select,
+.message textarea,
+.submit input {
+  width: 100%;
+}
+.message textarea {
+  height: 8em;
+}
+.radio input:before,
+.check input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background: #404058;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}
+.radio input:before {
+  border-radius: 50%;
+}
+.radio input:checked:before {
+  top: -0.1em;
+  left: -0.1em;
+  width: 0.5em;
+  height: 0.5em;
+  border: 0.35em solid #e9e9e9;
+  background: #404058;
+}
+.check input:checked:before {
+  content: "\f00c";
+  font-family: "fontAwesome";
+  color: white;
+}
+.check input:before {
+  left: -0.1px;
+}
+.mx-10 {
+  margin: 0 10px;
+}
+.my-10 {
+  margin: 10px 0;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mt-4 {
+  margin-top: 4px;
+}
+.w-full {
+  width: 100%;
+}
+.font-lg {
+  font-size: 18px;
+}
+.dp__input {
+  width: 100%;
+  height: 3em;
+  text-indent: 0.5em;
+  background: #404058 !important;
+  border: none !important;
+  border-radius: 4px;
+  color: white !important;
+  outline-color: white !important;
+}
+.flex-grow {
+  flex-grow: 1;
 }
